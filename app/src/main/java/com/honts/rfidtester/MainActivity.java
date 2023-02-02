@@ -1,7 +1,7 @@
 package com.honts.rfidtester;
 
 /*
-RFID Tested app for IH40 and IH45 readers
+RFID Tested app for IH40 RFID readers
 master branch contains the SDK (version 1.1.0) for IH40 RFID Reader
 
 For BT connection see scanAndConnect() Method , then do not forget to call createReader method
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements EventListener, On
     }
 
     // below method represents how to connect to RFID reader via BT
-    
+
     @SuppressLint("MissingPermission")
     public void scanAndConnect() {
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
