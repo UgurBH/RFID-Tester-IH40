@@ -30,9 +30,29 @@
         android:id="@+id/read"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RFID Read"
+        android:layout_marginStart="8dp"
+        android:text="Start Read"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create" />
+
+    <Button
+        android:id="@+id/btScanandConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="BT SCAN + Connect"
+        app:layout_constraintBottom_toTopOf="@+id/connect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/stopRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="Stop Read"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/create" />
 </androidx.constraintlayout.widget.ConstraintLayout>
